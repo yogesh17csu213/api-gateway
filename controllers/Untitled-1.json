@@ -1,0 +1,41 @@
+{
+    "services": [
+        {
+            "name":"homepage-combined",
+            "endpoint":"/api/1/homepage-service",
+            "method":"POST",
+            "extraData":{},
+            "extraParams":{},
+            "instances":[
+                {
+                    "name":"homepage-banner",
+                    "endpoint":"api.careers360.com/api/1/homepage-banners",
+                    "method":"GET"
+                },
+                {
+                    "name":"homepage-webinar",
+                    "endpoint":"api.careers360.com/api/1/webinars",
+                    "method":"GET"
+                }
+            ],
+            "combineResponses":true,
+            "applyMiddleware":[],
+            "useCaching":true,
+            "rateLimits":"10/s",
+            "banIps":[""],
+            "whitelistIps":[""],
+            "timeouts":5000,
+            "enableCors":true
+        },
+        {
+            "name":"register",
+            "endpoint":"/register"
+        },
+        {
+            "name":"register",
+            "endpoint":"/register"
+        }
+        
+    ]
+}
+  

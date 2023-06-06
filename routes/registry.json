@@ -1,0 +1,188 @@
+{
+  "services": [
+    {
+      "name": "homepage-combined",
+      "endpoint": "/api/1/homepage-service",
+      "method": "GET",
+      "multipleApi": [
+        {
+          "name": "homepage-header",
+          "host":"https://api.careers360.com",
+          "endpoint": "/api/1/header/",
+          "method": "GET",
+          "auth":true
+        },
+        {
+          "name": "homepage-banner",
+          "host":"https://api.careers360.com",
+          "endpoint": "/api/1/homepage",
+          "method": "GET",
+          "auth":true
+        },
+        {
+          "name": "homepage-webinar",
+          "host":"https://api.careers360.com",
+          "endpoint": "/api/1/webinars",
+          "method": "GET",
+          "auth":true
+        },
+        {
+          "name": "homepage-plans",
+          "host":"https://api.careers360.com",
+          "endpoint": "/api/1/homepage-plans",
+          "method": "GET",
+          "auth":true
+        },
+        {
+          "name": "latest-articles",
+          "host":"https://api.careers360.com",
+          "endpoint": "/api/1/articles/latest/",
+          "method": "GET",
+          "auth":true
+        },
+        {
+          "name": "top-categories",
+          "host":"https://api.careers360.com",
+          "endpoint": "/api/1/top-categories",
+          "method": "GET",
+          "auth":true
+        },
+        {
+          "name": "premium-category-1",
+          "host":"https://api.careers360.com",
+          "endpoint": "/api/1/premium-category",
+          "method": "GET",
+          "auth":true
+        },
+        {
+          "name": "premium-category-2",
+          "host":"https://api.careers360.com",
+          "endpoint": "/api/1/premium-category",
+          "method": "GET",
+          "auth":true
+        },
+        {
+          "name": "premium-category-3",
+          "host":"https://api.careers360.com",
+          "endpoint": "/api/1/premium-category",
+          "method": "GET",
+          "auth":true
+        },
+        {
+          "name": "premium-category-4",
+          "host":"https://api.careers360.com",
+          "endpoint": "/api/1/premium-category",
+          "method": "GET",
+          "auth":true
+        },
+        {
+          "name": "premium-category-5",
+          "host":"https://api.careers360.com",
+          "endpoint": "/api/1/premium-category",
+          "method": "GET",
+          "auth":true
+        },
+        {
+          "name": "premium-category-6",
+          "host":"https://api.careers360.com",
+          "endpoint": "/api/1/premium-category",
+          "method": "GET",
+          "auth":true
+        },
+        {
+          "name": "homepage-faq",
+          "host":"https://api.careers360.com",
+          "endpoint": "/api/1/faqs/",
+          "method": "GET"
+        }
+      ],
+      "applyMiddleware": [],
+      "useCaching": true,
+      "rateLimits": "10/s",
+      "banIps": [""],
+      "whitelistIps": [""],
+      "timeouts": 5000,
+      "enableCors": true
+    },
+    {
+      "name": "homepage-combined2",
+      "endpoint": "/api/1/homepage-service",
+      "method": "GET",
+      "multipleApi": [
+        {
+          "name": "homepage-header",
+          "endpoint": "https://api.careers360.com/api/1/header/",
+          "method": "GET"
+        },
+        {
+          "name": "homepage-banner",
+          "endpoint": "https://api.careers360.com/api/1/homepage/",
+          "method": "GET"
+        },
+        {
+          "name": "homepage-webinar",
+          "endpoint": "https://api.careers360.com/api/1/webinars",
+          "method": "GET"
+        },
+        {
+          "name": "homepage-plans",
+          "endpoint": "https://api.careers360.com/api/1/homepage-plans",
+          "method": "GET"
+        },
+        {
+          "name": "latest-articles",
+          "endpoint": "https://api.careers360.com/api/1/articles/latest/",
+          "method": "GET"
+        },
+        {
+          "name": "top-categories",
+          "endpoint": "https://api.careers360.com/api/1/top-categories",
+          "method": "GET"
+        },
+        {
+          "name": "premium-category-1",
+          "endpoint": "https://api.careers360.com/api/1/premium-category",
+          "method": "GET"
+        },
+        {
+          "name": "premium-category-2",
+          "endpoint": "https://api.careers360.com/api/1/premium-category",
+          "method": "GET"
+        },
+        {
+          "name": "premium-category-3",
+          "endpoint": "https://api.careers360.com/api/1/premium-category",
+          "method": "GET"
+        },
+        {
+          "name": "premium-category-4",
+          "endpoint": "https://api.careers360.com/api/1/premium-category",
+          "method": "GET"
+        },
+        {
+          "name": "premium-category-5",
+          "endpoint": "https://api.careers360.com/api/1/premium-category",
+          "method": "GET"
+        },
+        {
+          "name": "premium-category-6",
+          "endpoint": "https://api.careers360.com/api/1/premium-category",
+          "method": "GET"
+        },
+        {
+          "name": "homepage-faq",
+          "endpoint": "https://api.careers360.com/api/1/faqs/",
+          "method": "GET"
+        }
+      ],
+      "combineResponses": true,
+      "applyMiddleware": [],
+      "useCaching": true,
+      "rateLimits": "10/s",
+      "banIps": [""],
+      "whitelistIps": [""],
+      "timeouts": 5000,
+      "enableCors": true
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+FROM node:18-alpine3.14
+
+WORKDIR /home/ubuntu/main/api-gateway
+COPY /package.json /home/ubuntu/main/api-gateway
+RUN npm i --legacy-peer-deps
+COPY . /home/ubuntu/main/api-gateway
+EXPOSE 4040
+ENTRYPOINT npm run dev
+
